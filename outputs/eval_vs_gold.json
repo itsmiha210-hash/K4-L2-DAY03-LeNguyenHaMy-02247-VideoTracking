@@ -1,0 +1,92 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "annotations/clip_01/gt.txt",
+  "gt_file": "gold/clip_01/gt.txt",
+  "pred_label": "nhãn của bạn",
+  "gt_label": "gold clip_01",
+  "metrics": {
+    "HOTA": 0.838,
+    "DetA": 0.828,
+    "AssA": 0.849,
+    "LocA": 0.877,
+    "IDF1": 0.976,
+    "MOTA": 0.951,
+    "MOTP": 0.867,
+    "FP": 15,
+    "FN": 13,
+    "IDSW": 0,
+    "GT_boxes": 573,
+    "PRED_boxes": 575
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.976,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.951,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.867,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "id_switches": [],
+    "fragmented_gt_tracks": [],
+    "ghost_pred_tracks": [],
+    "loose_boxes": [
+      {
+        "frame": 109,
+        "gt_track": 7,
+        "iou": 0.51
+      },
+      {
+        "frame": 108,
+        "gt_track": 7,
+        "iou": 0.54
+      },
+      {
+        "frame": 81,
+        "gt_track": 5,
+        "iou": 0.55
+      },
+      {
+        "frame": 55,
+        "gt_track": 4,
+        "iou": 0.56
+      },
+      {
+        "frame": 103,
+        "gt_track": 6,
+        "iou": 0.57
+      },
+      {
+        "frame": 104,
+        "gt_track": 6,
+        "iou": 0.57
+      },
+      {
+        "frame": 100,
+        "gt_track": 5,
+        "iou": 0.59
+      },
+      {
+        "frame": 96,
+        "gt_track": 5,
+        "iou": 0.6
+      }
+    ],
+    "missed_gt_tracks": [],
+    "partially_covered_gt_tracks": []
+  }
+}
